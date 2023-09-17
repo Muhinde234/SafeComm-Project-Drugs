@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeComm | Reducing Drug Misuse</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="mainlogo">
+            <a href="#">SafeComm</a>
+        </div>
+
+        <div class="mainlogo">
+            <a href="#">Admin</a>
+        </div>
+
+        <div class="mobile-menu">
+            <ul class="menu-items">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="mpgtitl">All Restaurents and Mercahnts</div>
+        <table id="tables" style="">
+
+            <tr>
+                <th>Business ID</th>
+                <th>Business Name</th>
+                <th>Location</th>
+                <th>Status</th>
+                <th>Amount Sold</th>
+                <th>Date Joined</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>The Green Dispensary</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$15,000</td>
+                <td>2023-05-10</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>The Liquor Stop</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$22,500</td>
+                <td>2023-06-15</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>High Times Dispensary</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$18,750</td>
+                <td>2023-07-20</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>The Smoke Shop</td>
+                <td>Kigali</td>
+                <td>Not Active</td>
+                <td>$8,500</td>
+                <td>2023-08-05</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>The Brew House</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$13,200</td>
+                <td>2023-09-10</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>106</td>
+                <td>The Vape Emporium</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$9,800</td>
+                <td>2023-10-15</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>Green Leaf Dispensary</td>
+                <td>Kigali</td>
+                <td>Not Active</td>
+                <td>$5,700</td>
+                <td>2023-11-20</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>108</td>
+                <td>The Wine Cellar</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$11,900</td>
+                <td>2023-12-25</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>109</td>
+                <td>The Cigar Lounge</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$7,300</td>
+                <td>2024-01-30</td>
+                <td><button >View Details</button></td>
+            </tr>
+            <tr>
+                <td>110</td>
+                <td>The Brew House</td>
+                <td>Kigali</td>
+                <td>Active</td>
+                <td>$14,250</td>
+                <td>2024-02-05</td>
+                <td><button >View Details</button></td>
+            </tr>
+            
+
+        </table>
+
+        <div class="mpgtitl">All Users</div>
+
+        <table id="tables" style="">
+
+            <tr>
+                <th>User ID</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+                <th>Account Status</th>
+                <th>Last Login</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>John Doe</td>
+                <td>johndoe@example.com</td>
+                <td>+1234567890</td>
+                <td>Active</td>
+                <td>2023-09-18 09:30 AM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Jane Smith</td>
+                <td>janesmith@example.com</td>
+                <td>+9876543210</td>
+                <td>Active</td>
+                <td>2023-09-17 02:15 PM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>David Johnson</td>
+                <td>david@example.com</td>
+                <td>+1122334455</td>
+                <td>Not Active</td>
+                <td>2023-09-16 04:45 AM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="activateUser()" class="modalBtn">Activate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Sarah Brown</td>
+                <td>sarah@example.com</td>
+                <td>+9988776655</td>
+                <td>Active</td>
+                <td>2023-09-15 11:20 AM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Michael Wilson</td>
+                <td>michael@example.com</td>
+                <td>+1122339988</td>
+                <td>Not Active</td>
+                <td>2023-09-14 01:50 PM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="activateUser()" class="modalBtn">Activate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>Lisa Anderson</td>
+                <td>lisa@example.com</td>
+                <td>+8899776655</td>
+                <td>Active</td>
+                <td>2023-09-13 07:10 AM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>007</td>
+                <td>Robert Lee</td>
+                <td>robert@example.com</td>
+                <td>+9988771122</td>
+                <td>Active</td>
+                <td>2023-09-12 10:25 AM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>008</td>
+                <td>Emily Taylor</td>
+                <td>emily@example.com</td>
+                <td>+5566778899</td>
+                <td>Not Active</td>
+                <td>2023-09-11 03:40 PM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="activateUser()" class="modalBtn">Activate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>009</td>
+                <td>William Martinez</td>
+                <td>william@example.com</td>
+                <td>+9988775566</td>
+                <td>Active</td>
+                <td>2023-09-10 05:55 AM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            <tr>
+                <td>010</td>
+                <td>Olivia Garcia</td>
+                <td>olivia@example.com</td>
+                <td>+4455667788</td>
+                <td>Active</td>
+                <td>2023-09-09 12:15 PM</td>
+                <td>
+                    <button onclick="viewUserProfile()" class="modalBtn">View Profile</button>
+                    <button onclick="deactivateUser()" class="modalBtn">Deactivate</button>
+                </td>
+            </tr>
+            
+
+        </table>
+        
+    </main>
+
+    <footer>
+        <div class="mainfooter">
+            <div class="fboxes">
+                <div class="fbox fbox-1">
+                    <div class="mainlogo">
+                        <a href="#">SafeComm</a>
+                    </div>
+
+                    <p>SafeComm is a project aimed at curbing drug misuse among youth in Rwanda through technology-driven identification and verification systems. It seeks to ensure that underage individuals are denied access. This technology-driven initiative fosters a safer environment and empowers both shopkeepers and law enforcement.</p>
+                </div>
+                <div class="fbox fbox-2">
+                    <div class="ftitle">Navigation Links</div>
+                    <ul class="ftlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./pgs/about.html">About-Us</a></li>
+                        <li><a href="./pgs/guide.html">Guide To Use</a></li>
+                        <li><a href="./pgs/parenting.html">Parenting Control</a></li>
+                        <li><a href="./pgs/apply.html">Apply As A Store</a></li>
+                        <li><a href="./pgs/apply.html">Rules &and; Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="fbox fbox-3">
+                    <div class="ftitle">Navigation Links</div>
+                    <ul class="ftlinks">
+                        <li><a href="">Partners</a></li>
+                        <li><a href="">Health</a></li>
+                        <li><a href="">Effects Of Drugs</a></li>
+                        <li><a href="">Utilities</a></li>
+                        <li><a href="">Report A case</a></li>
+                    </ul>
+                </div>
+                <div class="fbox fbox-4">
+                    <div class="ftitle">Follow Us</div>
+                    <ul class="ftlinks">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">YouTube</a></li>
+                        <li><a href="">TikTok</a></li>
+                        <li><a href="">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="secondaryfooter">
+            <p>&copy; 2023 copyright <b>SafeComm</b> By Dositha</p>
+        </div>
+    </footer>
+</body>
+</html>
